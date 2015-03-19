@@ -11,7 +11,7 @@ end
   inline_image image_size constants gradient_support
   font_files   lists      colors    math
   env          cross_browser_support configuration
-  files
+  files        file_exist
 ).each do |func|
   require "compass/core/sass_extensions/functions/#{func}"
 end

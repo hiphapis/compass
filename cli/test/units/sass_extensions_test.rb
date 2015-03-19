@@ -219,6 +219,12 @@ WARNING
     assert_equal "a b c d", evaluate("reject(a b c d, e)")
   end
 
+  def test_file_exist
+    # TODO: how to make true.. any idea?
+    # assert_equal false, evaluate("file_exist(wrong)")
+    # assert_equal true, evaluate("file_exist(exist)")
+  end
+
 protected
   def evaluate(value)
     result = Sass::Script::Parser.parse(value, 0, 0).perform(Sass::Environment.new)
