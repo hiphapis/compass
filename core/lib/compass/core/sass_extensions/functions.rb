@@ -33,6 +33,7 @@ module Sass::Script::Functions
   include Compass::Core::SassExtensions::Functions::Math
   include Compass::Core::SassExtensions::Functions::CrossBrowserSupport
   include Compass::Core::SassExtensions::Functions::Env
+  include Compass::Core::SassExtensions::Functions::FileExist
 end
 
 # Wierd that this has to be re-included to pick up sub-modules. Ruby bug?
